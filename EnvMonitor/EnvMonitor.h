@@ -1,0 +1,33 @@
+#pragma once
+#include "stdafx.h"
+
+#ifndef PROCESSOR_ARCHITECTURE_AMD64
+#define PROCESSOR_ARCHITECTURE_AMD64 9
+#endif
+
+#ifndef PROCESSOR_ARCHITECTURE_ARM
+#define PROCESSOR_ARCHITECTURE_ARM 5
+#endif
+
+#ifndef PROCESSOR_ARCHITECTURE_ARM64
+#define PROCESSOR_ARCHITECTURE_ARM64 12
+#endif
+
+#ifndef PROCESSOR_ARCHITECTURE_IA64
+#define PROCESSOR_ARCHITECTURE_IA64 6
+#endif
+
+#ifndef PROCESSOR_ARCHITECTURE_INTEL
+#define PROCESSOR_ARCHITECTURE_INTEL 0
+#endif
+
+#define GBYTES 1073741824  
+#define	DGBYTES 1073741824.0
+#define MBYTES 1048576  
+#define KBYTES 1024  
+#define DKBYTES 1024.0 
+
+Json::Value getCpuInfo();
+Json::Value getOsInfo();
+Json::Value getMemoryInfo();
+Json::Value getDiskInfo();
